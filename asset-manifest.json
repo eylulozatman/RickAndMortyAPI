@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/eylulozatman/rick-morty-eylul.git/static/css/main.979fe937.css",
+    "main.js": "/eylulozatman/rick-morty-eylul.git/static/js/main.61d6ad6d.js",
+    "static/js/453.d08f620e.chunk.js": "/eylulozatman/rick-morty-eylul.git/static/js/453.d08f620e.chunk.js",
+    "index.html": "/eylulozatman/rick-morty-eylul.git/index.html",
+    "main.979fe937.css.map": "/eylulozatman/rick-morty-eylul.git/static/css/main.979fe937.css.map",
+    "main.61d6ad6d.js.map": "/eylulozatman/rick-morty-eylul.git/static/js/main.61d6ad6d.js.map",
+    "453.d08f620e.chunk.js.map": "/eylulozatman/rick-morty-eylul.git/static/js/453.d08f620e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.979fe937.css",
+    "static/js/main.61d6ad6d.js"
+  ]
+}
