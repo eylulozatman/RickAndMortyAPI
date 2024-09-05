@@ -38,7 +38,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://github.com/eylulozatman/rick-morty-eylul.git",
+  "homepage": "https://eylulozatman.github.io/rick-morty-eylul",
+
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
