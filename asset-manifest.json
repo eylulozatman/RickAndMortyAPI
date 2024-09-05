@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/eylulozatman/rick-morty-eylul.git/static/css/main.979fe937.css",
-    "main.js": "/eylulozatman/rick-morty-eylul.git/static/js/main.f66cbc10.js",
-    "static/js/453.d08f620e.chunk.js": "/eylulozatman/rick-morty-eylul.git/static/js/453.d08f620e.chunk.js",
-    "index.html": "/eylulozatman/rick-morty-eylul.git/index.html",
-    "main.979fe937.css.map": "/eylulozatman/rick-morty-eylul.git/static/css/main.979fe937.css.map",
-    "main.f66cbc10.js.map": "/eylulozatman/rick-morty-eylul.git/static/js/main.f66cbc10.js.map",
-    "453.d08f620e.chunk.js.map": "/eylulozatman/rick-morty-eylul.git/static/js/453.d08f620e.chunk.js.map"
+    "main.css": "/rick-morty-eylul/static/css/main.979fe937.css",
+    "main.js": "/rick-morty-eylul/static/js/main.d6a3d9eb.js",
+    "static/js/453.d08f620e.chunk.js": "/rick-morty-eylul/static/js/453.d08f620e.chunk.js",
+    "index.html": "/rick-morty-eylul/index.html",
+    "main.979fe937.css.map": "/rick-morty-eylul/static/css/main.979fe937.css.map",
+    "main.d6a3d9eb.js.map": "/rick-morty-eylul/static/js/main.d6a3d9eb.js.map",
+    "453.d08f620e.chunk.js.map": "/rick-morty-eylul/static/js/453.d08f620e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.979fe937.css",
-    "static/js/main.f66cbc10.js"
+    "static/js/main.d6a3d9eb.js"
   ]
 }
