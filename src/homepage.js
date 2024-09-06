@@ -100,29 +100,50 @@ const Homepage = () => {
     try {
       const response = await fetch('https://rickandmortyapi.com/api/location');
       const data = await response.json();
-      const locationNames = data.results.map(location => ({
+      const totalPages = data.info.pages; // Toplam sayfa sayısını al
+  
+      const locationPromises = [];
+      for (let i = 1; i <= totalPages; i++) {
+        locationPromises.push(fetch(`https://rickandmortyapi.com/api/location?page=${i}`).then(res => res.json()));  // her sayfanın bilgilerini al
+      }
+  
+      const allPagesData = await Promise.all(locationPromises);
+  
+      // flatMap kullanarak join
+      const allLocations = allPagesData.flatMap(pageData => pageData.results.map(location => ({
         id: location.id,
         name: location.name
-      }));
-      setLocations(locationNames);
+      })));
+  
+      setLocations(allLocations); // Tüm konumları state'e yerleştiriyoruz
     } catch (error) {
       console.error('Error fetching locations:', error);
     }
   };
+  
 
   const fetchEpisodes = async () => {
     try {
       const response = await fetch('https://rickandmortyapi.com/api/episode');
       const data = await response.json();
-      const episodeNames = data.results.map(episode => ({
+      const totalPages = data.info.pages; 
+  
+      const episodePromises = [];
+      for (let i = 1; i <= totalPages; i++) {
+        episodePromises.push(fetch(`https://rickandmortyapi.com/api/episode?page=${i}`).then(res => res.json()));
+      }
+      const allPagesData = await Promise.all(episodePromises);
+      const allEpisodes = allPagesData.flatMap(pageData => pageData.results.map(episode => ({
         id: episode.id,
         name: episode.name
-      }));
-      setEpisodes(episodeNames);
+      })));
+  
+      setEpisodes(allEpisodes); 
     } catch (error) {
       console.error('Error fetching episodes:', error);
     }
   };
+  
 
   useEffect(() => {
     if (filterBy === 'random') {
