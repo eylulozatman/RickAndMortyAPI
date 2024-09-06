@@ -38,9 +38,11 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://eylulozatman.github.io/RickAndMortyAPI/",
 
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  }
+  },
+  "homepage": "http://eylulozatman.github.io/RickAndMortyAPI/"
+
+  
 }
